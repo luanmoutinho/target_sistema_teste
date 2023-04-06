@@ -19,8 +19,8 @@ public class Exercicio_01 {
 		int indice = 13, soma = 0, k = 0;
 
 		while (k < indice) {
-			k++;
-			soma += 1;
+			k += 1;
+            		soma += k;
 		}
 
 		
