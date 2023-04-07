@@ -22,6 +22,7 @@ imprimir(SOMA);
 
 Ao final do processamento, qual será o valor da variável SOMA?
 
+<hr>
 
 ### QUESTÃO 02
 <hr>
@@ -31,6 +32,8 @@ Ao final do processamento, qual será o valor da variável SOMA?
 
 IMPORTANTE:
 Esse número pode ser informado através de qualquer entrada de sua preferência ou pode ser previamente definido no código;
+
+<hr>
 
 ### QUESTÃO 03
 <hr>
@@ -44,6 +47,7 @@ IMPORTANTE:
 a) Usar o json ou xml disponível como fonte dos dados do faturamento mensal;
 b) Podem existir dias sem faturamento, como nos finais de semana e feriados. Estes dias devem ser ignorados no cálculo da média;
 
+<hr>
 
 ### QUESTÃO 04
 <hr>
@@ -57,6 +61,8 @@ ES – R$27.165,48
 Outros – R$19.849,53
 
 Escreva um programa na linguagem que desejar onde calcule o percentual de representação que cada estado teve dentro do valor total mensal da distribuidora.
+
+<hr>
 
 ### QUESTÃO 05
 <hr>
