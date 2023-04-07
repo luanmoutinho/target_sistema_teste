@@ -1,12 +1,9 @@
 # target_sistema_teste
 ### Teste para a vaga de estágio Target Sistemas
 
-## QUESTÕES
+
+
 <hr>
-
-
-
-
 ### QUESTÃO 01
 <hr>
 
