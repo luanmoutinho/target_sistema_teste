@@ -20,11 +20,10 @@ public class Exercicio_01 {
 
 		while (k < indice) {
 			k += 1;
-            		soma += k;
+			soma += k;
 		}
 
-		
-		JOptionPane.showMessageDialog(null, "A soma dos números é igual a "+soma);
+		JOptionPane.showMessageDialog(null, "A soma dos números é igual a " + soma);
 	}
 
 }
