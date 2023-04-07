@@ -43,7 +43,7 @@ public class Exercicio_04 {
 						+ df.format(calcularPercentual(outros, valorTotal)) + "%");
 
 	}// FIM DO MAIN
-
+	//método para calcular o percentual do estado 
 	public static Double calcularPercentual(Double estado, Double valorTotal) {
 		Double percentual;
 

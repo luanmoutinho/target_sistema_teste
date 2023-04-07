@@ -33,10 +33,10 @@ public class Exercicio_03_App {
 		String diaMaior = null, diaMenor = null;
 		Double maiorValor = 0.0, menorValor = 1000000.00, verificaValor, totalFaturamento = 0.0, media = 0.0;
 		int count = 0, countDiasMaiorFat = 0;
-
+		//criando um objeto que vai serr setado com os dados do arquivo json
 		Exercicio_03_Faturamento faturamento = new Exercicio_03_Faturamento();
 		DecimalFormat df = new DecimalFormat("#,##0.00");
-		ArrayList<Exercicio_03_Faturamento> faturamentos = new ArrayList();
+		ArrayList<Exercicio_03_Faturamento> faturamentos = new ArrayList();//array para armazenar os objetos
 
 		JSONParser parser = new JSONParser();
 		try {
@@ -44,6 +44,8 @@ public class Exercicio_03_App {
 			JSONArray jArrayFaturamentos = (JSONArray) parser
 					.parse(new InputStreamReader(new FileInputStream("src/main/webapp/dados.json"), "UTF-8"));
 
+			//criando o objeto e setando com dados do array de dados que veio do json 
+			
 			for (Object object : jArrayFaturamentos) {
 				JSONObject jFaturamento = (JSONObject) object;
 				String dia = jFaturamento.get("dia").toString();
@@ -52,7 +54,7 @@ public class Exercicio_03_App {
 				faturamento = new Exercicio_03_Faturamento();
 				faturamento.setDia(dia);
 				faturamento.setValor(valor);
-				faturamentos.add(faturamento);
+				faturamentos.add(faturamento);//adicionando objeto ao array de objetos da classe Exercicio_03_Faturamento
 
 			}
 
@@ -69,7 +71,8 @@ public class Exercicio_03_App {
 
 			e.printStackTrace();
 		}
-
+		
+		//percorrendo o array 
 		for (Exercicio_03_Faturamento fatDiarios : faturamentos) {
 
 			verificaValor = fatDiarios.getValor();
@@ -79,13 +82,13 @@ public class Exercicio_03_App {
 
 			} else
 				totalFaturamento += verificaValor;
-
+			//verificando se é o maior
 			if (verificaValor > maiorValor) {
 				maiorValor = verificaValor;
 				diaMaior = fatDiarios.getDia();
 
 			}
-
+			//verificando se é o menor
 			if (verificaValor != 0.0 && verificaValor < menorValor) {
 				menorValor = verificaValor;
 				diaMenor = fatDiarios.getDia();
@@ -93,8 +96,8 @@ public class Exercicio_03_App {
 
 		}
 
-		media = totalFaturamento / (faturamentos.size() - count);
-
+		media = totalFaturamento / (faturamentos.size() - count);//calculo de media
+		//contando os dias em que o faturamento foi superior a media
 		for (Exercicio_03_Faturamento faturaDia : faturamentos) {
 			if (faturaDia.getValor() > media) {
 				countDiasMaiorFat++;

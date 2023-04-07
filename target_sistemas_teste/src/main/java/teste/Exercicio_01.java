@@ -18,7 +18,7 @@ public class Exercicio_01 {
 		 */
 		int indice = 13, soma = 0, k = 0;
 
-		while (k < indice) {
+		while (k < indice) {//enquanto K for menor que o indice, ele vai somar
 			k += 1;
 			soma += k;
 		}

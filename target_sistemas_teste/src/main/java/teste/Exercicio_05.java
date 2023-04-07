@@ -21,12 +21,12 @@ public class Exercicio_05 {
 		char aux;
 		int count = 1;
 
-		char[] palavraInvertida = palavraInformada.toCharArray();
+		char[] palavraInvertida = palavraInformada.toCharArray();//criando array para alterar a ordem dos caracteres
 
 		for (int i = 0; i < (palavraInvertida.length / 2); i++) {
-			aux = palavraInvertida[i];
-			palavraInvertida[i] = palavraInvertida[palavraInformada.length() - count];
-			palavraInvertida[palavraInformada.length() - count] = aux;
+			aux = palavraInvertida[i];//armazena o caractere para depois reposicionar
+			palavraInvertida[i] = palavraInvertida[palavraInformada.length() - count];//recebe o ultimo caractere que ainda não foi reposicionado
+			palavraInvertida[palavraInformada.length() - count] = aux;//// recebe o caractere armazenado
 			count++;
 
 		}
