@@ -8,6 +8,14 @@ public class Exercicio_05 {
 
 	public static void main(String[] args) {
 
+		/*
+		 * ) Escreva um programa que inverta os caracteres de um string.
+		 * 
+		 * IMPORTANTE: a) Essa string pode ser informada através de qualquer entrada de
+		 * sua preferência ou pode ser previamente definida no código; b) Evite usar
+		 * funções prontas, como, por exemplo, reverse;
+		 * 
+		 */
 		String palavraInformada = JOptionPane
 				.showInputDialog("Digite uma palavra e eu irei inverter os seus caracteres");
 		char aux;
